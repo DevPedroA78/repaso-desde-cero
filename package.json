@@ -1,0 +1,26 @@
+{
+  "name": "repaso-desde-cero",
+  "version": "1.0.0",
+  "description": "repaso de react desde cero",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "nodejs",
+    "express",
+    "kodemia",
+    "practica",
+    "bootstrap",
+    "reactstrap"
+  ],
+  "author": "@DevPedroA78",
+  "license": "ISC"
+}
