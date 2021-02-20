@@ -3,4 +3,8 @@
   background-image: url("https://picsum.photos/id/166/1366");
   background-size: cover;
 }
-/*# sourceMappingURL=App.css.map */
+
+.Home .home-hero h1, .Home .home-hero h2 {
+  text-shadow: 3px 3px 3px #333;
+}
+/*# sourceMappingURL=style.css.map */
