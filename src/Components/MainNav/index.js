@@ -28,10 +28,10 @@ function MainNav(){
             <Collapse isOpen={isOpen} navbar>
                 <Nav className="mr-auto" navbar>
                     <NavItem>
-                        <Link to="/components/">Ver posts</Link>
+                        <Link to="/posts" className="nav-link">Ver posts</Link>
                     </NavItem>
                     <NavItem>
-                        <Link to="/write-post">Escribe un post</Link>
+                        <Link to="/write-post" className="nav-link">Escribe un post</Link>
                     </NavItem>
                     </Nav>
             </Collapse>
