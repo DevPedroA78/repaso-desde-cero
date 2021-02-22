@@ -18,6 +18,7 @@ import './App.css';
 import MainNav from './Components/MainNav/index'
 //import './Pages/Home' //Lo importamos despues de crear la funcion y exportar en file Home.js
 import Home from './Pages/Home/Home';
+import WriteAPost from './Pages/WriteAPost/WriteAPost'
 
 function App() {
 
@@ -34,8 +35,8 @@ function App() {
                         <Route path="/post">
                             <h1>Vista de post</h1>
                         </Route>
-                        <Route path="/White-post">
-                            <h1>Vista para escribir un post</h1>
+                        <Route path="/Write-post">
+                            <WriteAPost/>
                         </Route>
                     </Switch>
                 </Container>
