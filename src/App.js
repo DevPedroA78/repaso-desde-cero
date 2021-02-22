@@ -16,7 +16,7 @@ import {
 import './App.css';
 
 import MainNav from './Components/MainNav/index'
-//import './Pages/Home' //Lo importamos despues de crear la funcion y exportar en file Home.js
+import './Pages/Home' //Lo importamos despues de crear la funcion y exportar en file Home.js
 import Home from './Pages/Home/Home';
 import WriteAPost from './Pages/WriteAPost/WriteAPost'
 
