@@ -16,7 +16,8 @@ import {
 
 function WriteAPost() {
     const [modal, setModal] = useState( false );
-    const [entryObject, setEntryObject] = useState({})
+    const [entryObject, setEntryObject] = useState({
+    })
 
     const toggle = () => setModal(!modal);
 
@@ -35,6 +36,7 @@ function WriteAPost() {
         .then( json => {
             console.log( json )
             setModal ( !modal )
+            setEntryObject({})
         })
     }
 
@@ -56,19 +58,27 @@ function WriteAPost() {
             <Row>
                 <Col xs={{ size: 10, offset: 1 }} md={{ size: 6, offset: 3 }}></Col>
                 <Form className="mt-3 p-3 bg-dark text-white border-rounded shadow">
-                    <FormGroup> 
+                    <FormGroup>
                         <Label>Titulo</Label>
-                        <Input onChange= { getEntryData }/>
+                        <Input 
+                        name="title" 
+                        onChange={getEntryData} 
+                        value={ !entryObject.title ? "" : entryObject.title}
+                        />
                     </FormGroup>
                     <FormGroup>
                         <Label>Contenido</Label>
-                        <Input onChange= { getEntryData }/>
+                        <Input 
+                        name="content" 
+                        onChange={getEntryData} 
+                        value={ !entryObject.content ? "" : entryObject.content}
+                        />
                     </FormGroup>
                     <FormGroup>
                         <Label>Url de la imagen</Label>
-                        <Input name="imgUrl" onChange= { getEntryData }/>
+                        <Input name="imgUrl" onChange={getEntryData} value={entryObject.imgUrl}/>
                     </FormGroup>
-                    <Button type="button" color="primary" onClick = { savePost }>Guardar post</Button>
+                    <Button type="button" color="primary" onClick={savePost} >Guardar post</Button>
                 </Form>
             </Row>
         </>
